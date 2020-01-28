@@ -128,8 +128,8 @@ void Keccak::f()
 		}
 
 		///*---TEST---*///
-		cout << endl << "Round " << round_number + 1 << " /24" << endl;
-		PRINT_STATE_STRING();
+		//cout << endl << "Round " << round_number + 1 << " /24" << endl;
+		//PRINT_STATE_STRING();
 		///*---END TEST---*///
 
 
@@ -222,10 +222,10 @@ std::string Keccak::createHashOf(std::string string_message)
 			else
 			{
 				///*---TEST---*///
-				if (byte == r)
-				{
-					PRINT_ARRAY(block, r, 2);
-				}
+				//if (byte == r)
+				//{
+				//	PRINT_ARRAY(block, r, 2);
+				//}
 				///*---END TEST---*///
 
 				block[byte] = 0x00;
@@ -234,7 +234,7 @@ std::string Keccak::createHashOf(std::string string_message)
 
 		UInt64* P_i = (UInt64*)block;
 
-		PRINT_ARRAY(P_i, b/w ,2);
+		//PRINT_ARRAY(P_i, b/w ,2);
 
 		Absorb(P_i); //block permutations
 
