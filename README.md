@@ -1,4 +1,4 @@
-# sha3.cpp
+# KECCAK_CPP
 Keccak hash algorithm made on C++ as my course work in the university.
 This program uses the original Keccak algorithm, that is discribed on Wikipedia or habr.com, with some additions:
 - You can choose the hash length: 512, 384, 256, 224, 128 bits;
